@@ -1,5 +1,6 @@
 docker pull node
 docker run -it --rm -p 4200:4200 -v ${PWD}:/src -w /src --name angular node /bin/bash
+docker run -it --rm -p 4200:4200 -p 3000:3000 -v ${PWD}:/src -w /src --name angular node /bin/bash
 
 npm install -g @angular/cli
 
@@ -13,6 +14,10 @@ ng generate component extrato
 
 npm start
 
+diretivas:
+ngIf
+ngFor
+
 guide:
 - formsmodule
 para formato de datas:
@@ -22,4 +27,19 @@ locale_id
 
 metodologia utilizada para criação de componentes:
 http://getbem.com/
+
+criação de serviços:
+ng generate service transferencia
+
+api http falsa para mock:
+jsonserver
+npm install -g json-server
+
+comando para iniciar um servidor:
+necessário outro terminal acessando o container
+docker exec -it <container> bash
+json-server --watch db.json
+utilizar a ferramenta jstots
+
+
 
