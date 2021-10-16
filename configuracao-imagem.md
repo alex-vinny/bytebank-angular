@@ -38,8 +38,9 @@ npm install -g json-server
 comando para iniciar um servidor:
 necessário outro terminal acessando o container
 docker exec -it <container> bash
-json-server --watch db.json
-utilizar a ferramenta jstots
+json-server --host 0.0.0.0 --watch db.json
+utilizar a ferramenta jsontots para converter de json para typescript
 
+para consumir requisições http, usamos a classe HttpClient
 
-
+módulo route para roteamento
