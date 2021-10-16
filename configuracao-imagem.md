@@ -8,7 +8,18 @@ ng new bytebank
 de dentro do container
 ng serve --host 0.0.0.0
 
+criar um novo componente:
+ng generate component extrato
+
 npm start
 
 guide:
 - formsmodule
+para formato de datas:
+- datepipe
+idioma localização:
+locale_id
+
+metodologia utilizada para criação de componentes:
+http://getbem.com/
+
